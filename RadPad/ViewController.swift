@@ -17,8 +17,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var answer4: UIButton!
     @IBOutlet weak var correctOrIncorrect: UILabel!
     @IBOutlet weak var nextQuestion: UIButton!
+    var questionNumber = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionNumber = Int(arc4random_uniform(5))
+        switch questionNumber {
+        case 0:
+            break
+        case 1:
+            break
+        case 2:
+            break
+        case 3:
+            break
+        case 4:
+            break
+        default:
+            break
+        }
         // Do any additional setup after loading the view, typically from a nib.
     }
 
