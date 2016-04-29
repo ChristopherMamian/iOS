@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var questionNumber = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextQuestion.hidden = true
+        correctOrIncorrect.text = ""
         questionNumber = Int(arc4random_uniform(5))
         switch questionNumber {
         case 0:
@@ -69,17 +71,58 @@ class ViewController: UIViewController {
     }
 
     @IBAction func answer1Pressed(sender: AnyObject) {
-        
+        if questionNumber == 0 {
+            correctOrIncorrect.text = "Incorrect!"
+            nextQuestion.hidden = false
+        } else if questionNumber == 1 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 2 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 3 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 4 {
+            correctOrIncorrect.text = "Correct!"
     }
     
     @IBAction func answer2Pressed(sender: AnyObject) {
-        
+        if questionNumber == 0 {
+            correctOrIncorrect.text = "Incorrect!"
+            nextQuestion.hidden = false
+        } else if questionNumber == 1 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 2 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 3 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 4 {
+            correctOrIncorrect.text = "Correct!"
     }
     @IBAction func answer3Pressed(sender: AnyObject) {
-        
+        if questionNumber == 0 {
+            correctOrIncorrect.text = "Incorrect!"
+            nextQuestion.hidden = false
+        } else if questionNumber == 1 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 2 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 3 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 4 {
+            correctOrIncorrect.text = "Correct!"
     }
 
     @IBAction func answer4Pressed(sender: AnyObject) {
+        if questionNumber == 0 {
+            correctOrIncorrect.text = "Incorrect!"
+            nextQuestion.hidden = false
+        } else if questionNumber == 1 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 2 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 3 {
+            correctOrIncorrect.text = "Correct!"
+        } else if questionNumber == 4 {
+            correctOrIncorrect.text = "Correct!"
     }
 }
 
