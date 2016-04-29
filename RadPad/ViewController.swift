@@ -23,14 +23,39 @@ class ViewController: UIViewController {
         questionNumber = Int(arc4random_uniform(5))
         switch questionNumber {
         case 0:
+            Question.text = "9 + 10 = "
+            answer1.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("21", forState: UIControlState.Normal)
+            answer3.setTitle("21", forState: UIControlState.Normal)
+            answer4.setTitle("21", forState: UIControlState.Normal)
             break
         case 1:
+            Question.text = "Who will win the Democratic Primary?"
+            answer1.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("21", forState: UIControlState.Normal)
+            answer3.setTitle("21", forState: UIControlState.Normal)
+            answer4.setTitle("21", forState: UIControlState.Normal)
             break
         case 2:
+            Question.text = "Which candidate is actually a reptile overlord?"
+            answer1.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("21", forState: UIControlState.Normal)
+            answer3.setTitle("21", forState: UIControlState.Normal)
+            answer4.setTitle("21", forState: UIControlState.Normal)
             break
         case 3:
+            Question.text = "Which candidate is a corporate shill?"
+            answer1.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("21", forState: UIControlState.Normal)
+            answer3.setTitle("21", forState: UIControlState.Normal)
+            answer4.setTitle("21", forState: UIControlState.Normal)
             break
         case 4:
+            Question.text = "Who are you voting for?"
+            answer1.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("21", forState: UIControlState.Normal)
+            answer3.setTitle("21", forState: UIControlState.Normal)
+            answer4.setTitle("21", forState: UIControlState.Normal)
             break
         default:
             break
