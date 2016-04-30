@@ -75,13 +75,18 @@ class ViewController: UIViewController {
             correctOrIncorrect.text = "Incorrect!"
             nextQuestion.hidden = false
         } else if questionNumber == 1 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 2 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 3 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 4 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
+        }
     }
     
     @IBAction func answer2Pressed(sender: AnyObject) {
@@ -89,25 +94,36 @@ class ViewController: UIViewController {
             correctOrIncorrect.text = "Incorrect!"
             nextQuestion.hidden = false
         } else if questionNumber == 1 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 2 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 3 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 4 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
+        }
     }
     @IBAction func answer3Pressed(sender: AnyObject) {
         if questionNumber == 0 {
             correctOrIncorrect.text = "Incorrect!"
             nextQuestion.hidden = false
         } else if questionNumber == 1 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 2 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 3 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 4 {
+            nextQuestion.hidden = false
+            correctOrIncorrect.text = "Correct!"
+        }
             correctOrIncorrect.text = "Correct!"
     }
 
@@ -116,13 +132,21 @@ class ViewController: UIViewController {
             correctOrIncorrect.text = "Incorrect!"
             nextQuestion.hidden = false
         } else if questionNumber == 1 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 2 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 3 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
         } else if questionNumber == 4 {
+            nextQuestion.hidden = false
             correctOrIncorrect.text = "Correct!"
+        }
     }
+        
+        @IBAction func nexttQuestion(sender: AnyObject){
+            viewDidLoad()
+        }
 }
-
