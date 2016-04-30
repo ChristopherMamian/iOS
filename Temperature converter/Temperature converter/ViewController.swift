@@ -25,9 +25,46 @@ class ViewController: UIViewController {
     }
 
     @IBAction func currency(sender: UISegmentedControl) {
+        switch sender.selectedSegmentIndex {
+        case 0:
+            currencyNum = 0
+            break
+        case 1:
+            currencyNum = 1
+            break
+        case 2:
+            currencyNum = 2
+            break
+        case 3:
+            currencyNum = 3
+            break
+        default:
+            break
+        }
     }
 
     @IBAction func convert(sender: AnyObject) {
+        var num = Int(usdamount.text!)
+        switch currencyNum {
+        case 0:
+            var convertedNum = Double(num!) * 6.34
+            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            break
+        case 1:
+            var convertedNum = Double(num!) * 6.34
+            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            break
+        case 2:
+            var convertedNum = Double(num!) * 6.34
+            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            break
+        case 3:
+            var convertedNum = Double(num!) * 6.34
+            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            break
+        default:
+            break
+        }
     }
 }
 
