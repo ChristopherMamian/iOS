@@ -51,16 +51,16 @@ class ViewController: UIViewController {
             label.text = "\(num!) USD is \(convertedNum) Yuan!"
             break
         case 1:
-            var convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            var convertedNum = Double(num!) * 0.92
+            label.text = "\(num!) USD is \(convertedNum) Euros!"
             break
         case 2:
             var convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            label.text = "\(num!) USD is \(convertedNum) Pounds!"
             break
         case 3:
             var convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Yuan!"
+            label.text = "\(num!) USD is \(convertedNum) Yen!"
             break
         default:
             break
