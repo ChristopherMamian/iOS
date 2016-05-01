@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Question: UILabel!
-    @IBOutlet weak var answer1: UIButton!
-    @IBOutlet weak var answer2: UIButton!
-    @IBOutlet weak var answer3: UIButton!
-    @IBOutlet weak var answer4: UIButton!
-    @IBOutlet weak var correctOrIncorrect: UILabel!
-    @IBOutlet weak var nextQuestion: UIButton!
-    var questionNumber = Int()
+    @IBOutlet var image: UIImageView!
+    @IBOutlet var Question: UILabel!
+    @IBOutlet var answer1: UIButton!
+    @IBOutlet var answer2: UIButton!
+    @IBOutlet var answer3: UIButton!
+    @IBOutlet var answer4: UIButton!
+    @IBOutlet var correctOrIncorrect: UILabel!
+    @IBOutlet var nextQuestion: UIButton!
+    var questionNumber: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        image.image = UIImage(named: "BernieSanders")
         nextQuestion.hidden = true
         correctOrIncorrect.text = ""
         questionNumber = Int(arc4random_uniform(5))
@@ -27,37 +29,37 @@ class ViewController: UIViewController {
         case 0:
             Question.text = "9 + 10 = "
             answer1.setTitle("21", forState: UIControlState.Normal)
-            answer2.setTitle("21", forState: UIControlState.Normal)
-            answer3.setTitle("21", forState: UIControlState.Normal)
-            answer4.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("15", forState: UIControlState.Normal)
+            answer3.setTitle("7", forState: UIControlState.Normal)
+            answer4.setTitle("1", forState: UIControlState.Normal)
             break
         case 1:
             Question.text = "Who will win the Democratic Primary?"
-            answer1.setTitle("21", forState: UIControlState.Normal)
-            answer2.setTitle("21", forState: UIControlState.Normal)
-            answer3.setTitle("21", forState: UIControlState.Normal)
-            answer4.setTitle("21", forState: UIControlState.Normal)
+            answer1.setTitle("Mr. Berns.", forState: UIControlState.Normal)
+            answer2.setTitle("Ela", forState: UIControlState.Normal)
+            answer3.setTitle("Chafee", forState: UIControlState.Normal)
+            answer4.setTitle("Hillary", forState: UIControlState.Normal)
             break
         case 2:
-            Question.text = "Which candidate is actually a reptile overlord?"
+            Question.text = "Which candidate is actually a reptilian overlord?"
             answer1.setTitle("21", forState: UIControlState.Normal)
-            answer2.setTitle("21", forState: UIControlState.Normal)
-            answer3.setTitle("21", forState: UIControlState.Normal)
-            answer4.setTitle("21", forState: UIControlState.Normal)
+            answer2.setTitle("15", forState: UIControlState.Normal)
+            answer3.setTitle("Obama", forState: UIControlState.Normal)
+            answer4.setTitle("Hillary", forState: UIControlState.Normal)
             break
         case 3:
             Question.text = "Which candidate is a corporate shill?"
-            answer1.setTitle("21", forState: UIControlState.Normal)
-            answer2.setTitle("21", forState: UIControlState.Normal)
-            answer3.setTitle("21", forState: UIControlState.Normal)
-            answer4.setTitle("21", forState: UIControlState.Normal)
+            answer1.setTitle("All of them, except Bernie Sanders", forState: UIControlState.Normal)
+            answer2.setTitle("Hillary Clinton", forState: UIControlState.Normal)
+            answer3.setTitle("Donald Trump", forState: UIControlState.Normal)
+            answer4.setTitle("Ted Cruz", forState: UIControlState.Normal)
             break
         case 4:
             Question.text = "Who are you voting for?"
-            answer1.setTitle("21", forState: UIControlState.Normal)
-            answer2.setTitle("21", forState: UIControlState.Normal)
-            answer3.setTitle("21", forState: UIControlState.Normal)
-            answer4.setTitle("21", forState: UIControlState.Normal)
+            answer1.setTitle("Barack Obama", forState: UIControlState.Normal)
+            answer2.setTitle("Hilary", forState: UIControlState.Normal)
+            answer3.setTitle("Jeb", forState: UIControlState.Normal)
+            answer4.setTitle("Carly", forState: UIControlState.Normal)
             break
         default:
             break
