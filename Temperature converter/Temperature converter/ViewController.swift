@@ -47,19 +47,19 @@ class ViewController: UIViewController {
         var num = Int(usdamount.text!)
         switch currencyNum {
         case 0:
-            var convertedNum = Double(num!) * 6.34
+            let convertedNum = Double(num!) * 6.34
             label.text = "\(num!) USD is \(convertedNum) Yuan!"
             break
         case 1:
-            var convertedNum = Double(num!) * 0.92
+            let convertedNum = Double(num!) * 0.92
             label.text = "\(num!) USD is \(convertedNum) Euros!"
             break
         case 2:
-            var convertedNum = Double(num!) * 6.34
+            let convertedNum = Double(num!) * 6.34
             label.text = "\(num!) USD is \(convertedNum) Pounds!"
             break
         case 3:
-            var convertedNum = Double(num!) * 6.34
+            let convertedNum = Double(num!) * 6.34
             label.text = "\(num!) USD is \(convertedNum) Yen!"
             break
         default:
