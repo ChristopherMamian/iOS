@@ -12,7 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var label: UILabel!
     @IBOutlet var usdamount: UITextField!
-    var currencyNum = Int()
+    var currencyNum: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = ""
@@ -44,27 +45,29 @@ class ViewController: UIViewController {
     }
 
     @IBAction func convert(sender: AnyObject) {
-        var num = Int(usdamount.text!)
-        switch currencyNum {
-        case 0:
-            let convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Yuan!"
-            break
-        case 1:
-            let convertedNum = Double(num!) * 0.92
-            label.text = "\(num!) USD is \(convertedNum) Euros!"
-            break
-        case 2:
-            let convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Pounds!"
-            break
-        case 3:
-            let convertedNum = Double(num!) * 6.34
-            label.text = "\(num!) USD is \(convertedNum) Yen!"
-            break
-        default:
-            break
+        if let num = usdamount.text.toInt() {
+            switch currencyNum {
+            case 0:
+                let convertedNum = Double(num) * 6.34
+                label.text = "\(num) USD is \(convertedNum) Yuan!"
+                break
+            case 1:
+                let convertedNum = Double(num) * 0.92
+                label.text = "\(num) USD is \(convertedNum) Euros!"
+                break
+            case 2:
+                let convertedNum = Double(num) * 6.34
+                label.text = "\(num) USD is \(convertedNum) Pounds!"
+                break
+            case 3:
+                let convertedNum = Double(num) * 6.34
+                label.text = "\(num) USD is \(convertedNum) Yen!"
+                break
+            default:
+                break
+            }
         }
+
     }
 }
 

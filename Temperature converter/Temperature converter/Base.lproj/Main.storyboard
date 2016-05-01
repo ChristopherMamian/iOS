@@ -17,28 +17,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-bt-0pc">
-                                <rect key="frame" x="67" y="48" width="491" height="29"/>
-                                <segments>
-                                    <segment title="Yuan"/>
-                                    <segment title="Euros"/>
-                                    <segment title="Pounds"/>
-                                    <segment title="Yen"/>
-                                </segments>
-                            </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-vj-qx9">
-                                <rect key="frame" x="67" y="274" width="506" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ze-vj-qx9">
+                                <rect key="frame" x="20" y="274" width="560" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-s8-lwP">
-                                <rect key="frame" x="289" y="362" width="55" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z78-s8-lwP">
+                                <rect key="frame" x="263" y="362" width="75" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="bcP-Tw-vbP"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                 <state key="normal" title="Convert">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="convert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zyw-c3-fu3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59y-P4-Y7G">
-                                <rect key="frame" x="67" y="114" width="491" height="99"/>
+                                <rect key="frame" x="20" y="114" width="560" height="99"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="99" id="Iu1-Cn-vij"/>
                                 </constraints>
@@ -46,19 +44,47 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cyp-bt-0pc">
+                                <rect key="frame" x="20" y="48" width="560" height="29"/>
+                                <segments>
+                                    <segment title="Yuan"/>
+                                    <segment title="Euros"/>
+                                    <segment title="Pounds"/>
+                                    <segment title="Yen"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="leading" secondItem="9ze-vj-qx9" secondAttribute="leading" id="1Jx-RE-K1k"/>
                             <constraint firstItem="9ze-vj-qx9" firstAttribute="top" secondItem="59y-P4-Y7G" secondAttribute="bottom" constant="61" id="6mb-9B-7jj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="59y-P4-Y7G" secondAttribute="trailing" constant="20" id="8i3-YA-cRr"/>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="114" id="9Eg-73-YpF"/>
+                            <constraint firstItem="59y-P4-Y7G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="An8-1r-j0n"/>
                             <constraint firstAttribute="trailingMargin" secondItem="59y-P4-Y7G" secondAttribute="trailing" constant="26" id="GVJ-xh-3el"/>
+                            <constraint firstItem="Z78-s8-lwP" firstAttribute="centerX" secondItem="9ze-vj-qx9" secondAttribute="centerX" id="GeP-g2-PFC"/>
+                            <constraint firstItem="9ze-vj-qx9" firstAttribute="trailing" secondItem="59y-P4-Y7G" secondAttribute="trailing" id="IR1-fn-Q0K"/>
+                            <constraint firstAttribute="trailing" secondItem="59y-P4-Y7G" secondAttribute="trailing" constant="20" id="NoT-Mi-Yyb"/>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="trailing" secondItem="Cyp-bt-0pc" secondAttribute="trailing" id="UFq-lI-5WQ"/>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="top" secondItem="Cyp-bt-0pc" secondAttribute="bottom" constant="38" id="V0s-bi-EJS"/>
+                            <constraint firstItem="Z78-s8-lwP" firstAttribute="top" secondItem="9ze-vj-qx9" secondAttribute="bottom" constant="58" id="VH2-oU-qMP"/>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="51" id="XMM-Jo-aEB"/>
+                            <constraint firstItem="Cyp-bt-0pc" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="28" id="jDW-St-ZW1"/>
                             <constraint firstItem="59y-P4-Y7G" firstAttribute="leading" secondItem="Cyp-bt-0pc" secondAttribute="leading" id="jqY-g2-awP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8i3-YA-cRr"/>
+                                <exclude reference="9Eg-73-YpF"/>
+                                <exclude reference="GVJ-xh-3el"/>
+                                <exclude reference="XMM-Jo-aEB"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="59y-P4-Y7G" id="c4T-oi-RYV"/>
+                        <outlet property="usdamount" destination="9ze-vj-qx9" id="KHb-BO-OdH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
