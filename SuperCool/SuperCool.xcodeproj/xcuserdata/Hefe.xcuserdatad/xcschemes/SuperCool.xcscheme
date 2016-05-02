@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91EB5D181CD6B1C400F5FB5C"
-               BuildableName = "Civilia.app"
-               BlueprintName = "Civilia"
-               ReferencedContainer = "container:Civilia.xcodeproj">
+               BlueprintIdentifier = "911231A81CD706EF00880C3D"
+               BuildableName = "SuperCool.app"
+               BlueprintName = "SuperCool"
+               ReferencedContainer = "container:SuperCool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91EB5D2D1CD6B1C400F5FB5C"
-               BuildableName = "CiviliaTests.xctest"
-               BlueprintName = "CiviliaTests"
-               ReferencedContainer = "container:Civilia.xcodeproj">
+               BlueprintIdentifier = "911231BD1CD706EF00880C3D"
+               BuildableName = "SuperCoolTests.xctest"
+               BlueprintName = "SuperCoolTests"
+               ReferencedContainer = "container:SuperCool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "91EB5D2D1CD6B1C400F5FB5C"
-               BuildableName = "CiviliaTests.xctest"
-               BlueprintName = "CiviliaTests"
-               ReferencedContainer = "container:Civilia.xcodeproj">
+               BlueprintIdentifier = "911231BD1CD706EF00880C3D"
+               BuildableName = "SuperCoolTests.xctest"
+               BlueprintName = "SuperCoolTests"
+               ReferencedContainer = "container:SuperCool.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91EB5D181CD6B1C400F5FB5C"
-            BuildableName = "Civilia.app"
-            BlueprintName = "Civilia"
-            ReferencedContainer = "container:Civilia.xcodeproj">
+            BlueprintIdentifier = "911231A81CD706EF00880C3D"
+            BuildableName = "SuperCool.app"
+            BlueprintName = "SuperCool"
+            ReferencedContainer = "container:SuperCool.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91EB5D181CD6B1C400F5FB5C"
-            BuildableName = "Civilia.app"
-            BlueprintName = "Civilia"
-            ReferencedContainer = "container:Civilia.xcodeproj">
+            BlueprintIdentifier = "911231A81CD706EF00880C3D"
+            BuildableName = "SuperCool.app"
+            BlueprintName = "SuperCool"
+            ReferencedContainer = "container:SuperCool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "91EB5D181CD6B1C400F5FB5C"
-            BuildableName = "Civilia.app"
-            BlueprintName = "Civilia"
-            ReferencedContainer = "container:Civilia.xcodeproj">
+            BlueprintIdentifier = "911231A81CD706EF00880C3D"
+            BuildableName = "SuperCool.app"
+            BlueprintName = "SuperCool"
+            ReferencedContainer = "container:SuperCool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

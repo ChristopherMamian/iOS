@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Civilia
+//  SuperCool
 //
 //  Created by Christopher Mamian on 5/1/16.
 //  Copyright (c) 2016 Christopher Mamian. All rights reserved.

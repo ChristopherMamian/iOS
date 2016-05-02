@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Civilia.xcscheme</key>
+		<key>SuperCool.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>91EB5D181CD6B1C400F5FB5C</key>
+		<key>911231A81CD706EF00880C3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>91EB5D2D1CD6B1C400F5FB5C</key>
+		<key>911231BD1CD706EF00880C3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

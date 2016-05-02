@@ -1,6 +1,6 @@
 //
-//  CiviliaTests.swift
-//  CiviliaTests
+//  SuperCoolTests.swift
+//  SuperCoolTests
 //
 //  Created by Christopher Mamian on 5/1/16.
 //  Copyright (c) 2016 Christopher Mamian. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class CiviliaTests: XCTestCase {
+class SuperCoolTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
