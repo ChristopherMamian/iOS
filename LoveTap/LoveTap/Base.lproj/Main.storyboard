@@ -19,6 +19,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-va-V9e">
                                 <rect key="frame" x="-22" y="-18" width="644" height="636"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="VGC-cj-OjG">
+                                <rect key="frame" x="52" y="87" width="497" height="107"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -34,6 +37,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Tapper" width="497" height="107"/>
         <image name="retrobg" width="800" height="800"/>
     </resources>
 </document>
