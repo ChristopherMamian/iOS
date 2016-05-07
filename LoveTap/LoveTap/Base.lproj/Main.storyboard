@@ -20,11 +20,18 @@
                                 <rect key="frame" x="-22" y="-18" width="644" height="636"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="VGC-cj-OjG">
-                                <rect key="frame" x="52" y="87" width="497" height="107"/>
+                                <rect key="frame" x="52" y="87" width="487" height="105"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-VN-2dq">
+                                <rect key="frame" x="176" y="397" width="249" height="120"/>
+                                <state key="normal" image="playbtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Xlo-VN-2dq" secondAttribute="centerX" id="1Mv-98-uom"/>
                             <constraint firstAttribute="trailing" secondItem="3G3-va-V9e" secondAttribute="trailing" id="1gd-xR-eQQ"/>
                             <constraint firstAttribute="bottom" secondItem="3G3-va-V9e" secondAttribute="bottom" id="B3X-6n-xYK"/>
                             <constraint firstItem="3G3-va-V9e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KlN-Ii-KXj"/>
@@ -38,6 +45,7 @@
     </scenes>
     <resources>
         <image name="Tapper" width="497" height="107"/>
+        <image name="playbtn" width="356" height="175"/>
         <image name="retrobg" width="800" height="800"/>
     </resources>
 </document>
