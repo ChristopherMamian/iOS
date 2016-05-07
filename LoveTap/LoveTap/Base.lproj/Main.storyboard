@@ -19,21 +19,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="retrobg" translatesAutoresizingMaskIntoConstraints="NO" id="3G3-va-V9e">
                                 <rect key="frame" x="-22" y="-18" width="644" height="636"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="VGC-cj-OjG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tapper" translatesAutoresizingMaskIntoConstraints="NO" id="VGC-cj-OjG" userLabel="Logo">
                                 <rect key="frame" x="52" y="87" width="487" height="105"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-VN-2dq">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xlo-VN-2dq" userLabel="PlayButton">
                                 <rect key="frame" x="176" y="397" width="249" height="120"/>
                                 <state key="normal" image="playbtn">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to set?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-5o-r2U">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="How many taps to set?" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xXB-5o-r2U" userLabel="txtField">
                                 <rect key="frame" x="176" y="359" width="249" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YQ-9A-5L3">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YQ-9A-5L3" userLabel="CoinButton">
                                 <rect key="frame" x="214" y="51" width="172" height="177"/>
                                 <state key="normal" image="coin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -55,6 +55,13 @@
                             <constraint firstItem="3G3-va-V9e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gzj-hK-oJw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="howManyTagsTxt" destination="xXB-5o-r2U" id="dgk-iO-72s"/>
+                        <outlet property="logoImg" destination="VGC-cj-OjG" id="5BB-NC-Dn0"/>
+                        <outlet property="playBtn" destination="Xlo-VN-2dq" id="Dbm-cd-3YK"/>
+                        <outlet property="tapBtn" destination="6YQ-9A-5L3" id="1O5-iH-Kdh"/>
+                        <outlet property="tapsLbl" destination="MF5-64-CXp" id="fet-Kk-5Yv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
